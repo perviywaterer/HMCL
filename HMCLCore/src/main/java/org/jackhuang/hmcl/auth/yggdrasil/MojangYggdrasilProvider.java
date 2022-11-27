@@ -27,22 +27,22 @@ public class MojangYggdrasilProvider implements YggdrasilProvider {
 
     @Override
     public URL getAuthenticationURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/authenticate");
+        return NetworkUtils.toURL("https://auth.mc-user.com:233/3e3a866d543911ed9cdc00163e095b49/authserver/authenticate");
     }
 
     @Override
     public URL getRefreshmentURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/refresh");
+        return NetworkUtils.toURL("https://auth.mc-user.com:233/3e3a866d543911ed9cdc00163e095b49/authserver/refresh");
     }
 
     @Override
     public URL getValidationURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/validate");
+        return NetworkUtils.toURL("https://auth.mc-user.com:233/3e3a866d543911ed9cdc00163e095b49/authserver/validate");
     }
 
     @Override
     public URL getInvalidationURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/invalidate");
+        return NetworkUtils.toURL("https://auth.mc-user.com:233/3e3a866d543911ed9cdc00163e095b49/authserver/invalidate");
     }
 
     @Override
@@ -52,11 +52,11 @@ public class MojangYggdrasilProvider implements YggdrasilProvider {
 
     @Override
     public URL getProfilePropertiesURL(UUID uuid) {
-        return NetworkUtils.toURL("https://sessionserver.mojang.com/session/minecraft/profile/" + UUIDTypeAdapter.fromUUID(uuid));
+        return NetworkUtils.toURL("https://auth.mc-user.com:233/3e3a866d543911ed9cdc00163e095b49/authserver/session/minecraft/profile/" + UUIDTypeAdapter.fromUUID(uuid));
     }
 
     @Override
     public String toString() {
-        return "mojang";
+        return "nide8";
     }
 }
